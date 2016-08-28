@@ -1,15 +1,15 @@
 # wadmaps
 
-WADMaps is an attempt to determine what levels a doom wad is meant to be played on. Not all WADs come with a handy txt file that tells you which level it is and not all of them use E1M1 or MAP01 when they are the only level. 
+WADMaps is an attempt to determine what levels a doom wad is meant to be played on. Not all WADs come with a handy txt file that tells you which level it is and not all of them use E1M1 or MAP01 when there is only one level. 
 
-# How
+## How
 This program will look through the binary wad file passed as an argument and return the levels in the wad. It will try to match a known level name (such as E3M5) to text in the file. If there is a match the level is assumed to used in the game. It is a basic text search like the UNIX `strings` command but is designed to just find doom level names.
 
-# Why
+## Why
 This program will be useful for automation. With it you could parse a wad, load it into a server, then set the server to the correct map. 
- made it in particular for a project involving the automation of playing the 1830 wad files from Maximum Doom on my Master Levels for Doom 2 disc.
+I made it for a project involving the automation of playing the 1830 wad files from Maximum Doom on my Master Levels for Doom 2 disc.
 
-# Example
+## Example
 
 ```
 $ wadmap doom1.wad 
